@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Quotes</title>
+  <style>
+    #quote {
+      font-style: italic;
+      font-size: 1.2em;
+      border-left: 4px solid #888;
+      padding-left: 10px;
+      margin: 20px 0;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>My Favorite Quotes</h1>
+
+  <!-- This is where the quote will appear -->
+  <div id="quote"></div>
+
+  <!-- Your JavaScript goes inside a <script> tag -->
+  <script>
+    const quotes = [
+      "It's not that I'm so smart, it's just that I stay with problems longer. – Albert Einstein",
+      "I never make exceptions. An exception disproves the rule. - Sherlock Holmes",
+      "We are what we repeatedly do. Excellence, therefore, is not an act but a habit.  - Aristotle/Will Durant"
+    ];
+
+    const quoteDiv = document.getElementById("quote");
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    quoteDiv.textContent = quotes[randomIndex];
+  </script>
+
+</body>
+</html>
