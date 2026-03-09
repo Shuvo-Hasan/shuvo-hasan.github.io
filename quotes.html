@@ -48,19 +48,27 @@ h1{
 <script>
 
 const quotes = [
+"The reward of deeds depends upon the intentions, and every person will get the reward according to what he has intended. - Muhammad, Peace be upon him",    
 "It's not that I'm so smart, it's just that I stay with problems longer. – Albert Einstein",
+"We are what we repeatedly do. Excellence, therefore, is not an act but a habit. – Aristotle / Will Durant",
+"HQW = TS * IF - Cal Newport",
+"If you don’t produce, you won’t thrive – no matter how skilled or talented you are.  – Cal Newport",
+"The game is afoot. - Sherlock Holmes in  Adventure of the Abbey Grange",
+"Education never ends, Watson. It is a series of lessons, with the greatest for the last - Sherlock Holmes"
 "I never make exceptions. An exception disproves the rule. – Sherlock Holmes",
-"We are what we repeatedly do. Excellence, therefore, is not an act but a habit. – Aristotle / Will Durant"
+"There are no extraordinary men...just extraordinary circumstances that ordinary men are forced to deal with. - Admiral William Halsey Jr.",
+"A ship in port is safe, but that’s not what ships are built for. – Admiral Grace Murray Hopper"
 ];
 
 const quoteDiv = document.getElementById("quote");
 
-const randomIndex = Math.floor(Math.random() * quotes.length);
-
-quoteDiv.textContent = quotes[randomIndex];
+quotes.forEach(function(q){
+    const p = document.createElement("p");
+    p.textContent = q;
+    quoteDiv.appendChild(p);
+});
 
 </script>
-
 </body>
 
 </html>
