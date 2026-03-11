@@ -39,7 +39,7 @@ nav {
 
 /* Navigation links */
 
-nav a {
+.nav-link {
   text-decoration: none;
   color: #333;
   font-weight: 500;
@@ -49,7 +49,7 @@ nav a {
 
 /* Hover effect */
 
-nav a:hover {
+.nav-link:hover {
   color: #007acc;
 }
 
