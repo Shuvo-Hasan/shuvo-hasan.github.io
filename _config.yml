@@ -1,3 +1,5 @@
 title: Mehedi Hasan
 description: Personal website of Mehedi Hasan
-theme: minimal_mistakes
+remote_theme: mmistakes/minimal-mistakes
+plugins:
+  - jekyll-remote-theme # Required to load remote themes
