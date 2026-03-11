@@ -1,73 +1,56 @@
-/* Reset browser defaults */
-
+/* Reset default styling */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   line-height: 1.6;
 }
 
-/* Sticky wrapper */
-
+/* Sticky / Fixed Header */
 .site-header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: white;
+  position: fixed; /* Make it fixed at the top */
+  top: 0;          /* Start at the very top */
+  left: 0;
+  width: 100%;     /* Full width */
+  background-color: white;
+  z-index: 1000;   /* Make sure it stays above content */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* subtle shadow */
 }
 
-/* Header */
-
+/* Header styling */
 header {
   text-align: center;
   padding: 25px 10px;
   border-bottom: 1px solid #ddd;
-  background: white;
 }
 
+/* Name styling */
 header h1 {
   margin-bottom: 10px;
   font-size: 32px;
 }
 
-/* Navigation */
-
-nav {
-  border-bottom: 1px solid #eee;
+/* Navbar styling */
+.navbar {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 
-/* THIS controls the spacing */
-
+/* Keep spacing between links */
 .nav-links {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 20px; /* spacing between nav items */
 }
 
-/* Links */
-
-.nav-link {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  font-size: 16px;
-}
-
-.nav-link:hover {
-  color: #007acc;
-}
-
-/* Main content */
-
+/* Ensure main content starts below fixed header */
 .main-content {
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
+  padding-top: 180px; /* adjust based on header + navbar height */
 }
 
-/* Footer */
-
+/* Footer styling */
 footer {
   text-align: center;
   margin-top: 50px;
-  color: #777;
+  margin-bottom: 30px;
+  color: #666;
 }
