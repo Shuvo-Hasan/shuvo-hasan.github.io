@@ -3,57 +3,36 @@
 
 <head>
 <meta charset="UTF-8">
-<title>About</title>
+<title>Quotes</title>
 
 <style>
 
 body{
     font-family: Arial, sans-serif;
-    margin:0;
-    padding:0;
-}
+    background-color: #ffffff;
 
-/* Main container */
-
-.container{
-    max-width:1000px;
-    margin:auto;
-    padding-top:80px;
-}
-
-/* Two-column layout */
-
-.about-section{
+    /* This centers everything vertically and horizontally */
     display:flex;
-    align-items:flex-start;
-    gap:60px;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    padding-top:120px;
+    margin:0;
 }
-
-/* Left text */
-
-.about-text{
-    flex:2;
-    font-size:18px;
-    line-height:1.7;
-}
-
-/* Right image */
-
-.about-photo{
-    flex:1;
-}
-
-.about-photo img{
-    width:100%;
-    max-width:280px;
-    border-radius:8px;
-}
-
-/* Heading */
 
 h1{
     font-size:42px;
-    margin-bottom:30px;
+    margin-bottom:40px;
+}
+
+#quote{
+    font-size:28px;
+    font-style:italic;
+    max-width:800px;
+    text-align:center;
+    line-height:1.6;
+    color:#333;
 }
 
 </style>
@@ -62,39 +41,37 @@ h1{
 
 <body>
 
-<div class="container">
+<h1>My Favorite Quotes</h1>
 
-<h1>About</h1>
+<div id="quote"></div>
 
-<div class="about-section">
+<script>
 
-<div class="about-text">
+const quotes = [
+' "The reward of deeds depends upon the intentions, and every person will get the reward according to what he has intended." - Muhammad, Peace be upon him ',    
+' "It is not that I am so smart, it is just that I stay with problems longer." – Albert Einstein ',
+' "We are what we repeatedly do. Excellence, therefore, is not an act but a habit." – Aristotle / Will Durant ',
+' "HQW = TS * IF" - Cal Newport ',
+' "If you don’t produce, you won’t thrive – no matter how skilled or talented you are."  – Cal Newport ',
+' "The game is afoot." - Sherlock Holmes in  Adventure of the Abbey Grange ',
+' "When you have eliminated all which is impossible, then whatever remains, however improbable, must be the truth." - Sherlock Holmes in The Sign of Four ',
+' "Education never ends, Watson. It is a series of lessons, with the greatest for the last." - Sherlock Holmes in His Last Bow',
+' "I never make exceptions. An exception disproves the rule." – Sherlock Holmes in The Sign of Four',
+' "There is nothing more deceptive than an obvious fact." - Sherlock Holmes in The Boscombe Valley Mystery ',
+' "I am a brain, Watson. The rest of me is a mere appendix." - Sherlock Holmes in The Adventure of the Mazarin Stone ',
+' "There are no extraordinary men...just extraordinary circumstances that ordinary men are forced to deal with." - Admiral William Halsey Jr. ',
+' "A ship in port is safe, but that’s not what ships are built for." – Admiral Grace Murray Hopper '
+];
 
-<p>
-I am Mehedi Hasan. I am interested in machine learning and its applications in physics and engineering.
-</p>
+const quoteDiv = document.getElementById("quote");
 
-<p>
-My background is in mathematics and theoretical physics. I enjoy exploring how mathematical models and modern machine learning techniques can be used to understand complex physical systems.
-</p>
+quotes.forEach(function(q){
+    const p = document.createElement("p");
+    p.textContent = q;
+    quoteDiv.appendChild(p);
+});
 
-<p>
-I have a passion for understanding how things work at the most fundamental level. 
-</p>
-
-
-</div>
-
-<div class="about-photo">
-
-<img src="images/Profile.jpg" alt="Profile photo">
-
-</div>
-
-</div>
-
-</div>
-
+</script>
 </body>
 
 </html>
