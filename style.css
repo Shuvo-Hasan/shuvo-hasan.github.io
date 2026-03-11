@@ -6,13 +6,17 @@ body {
   line-height: 1.6;
 }
 
-/* Header */
+/* Header (Name section) */
 
 header {
   text-align: center;
   padding: 25px 10px;
   border-bottom: 1px solid #ddd;
   background-color: white;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 /* Name */
@@ -25,21 +29,14 @@ header h1 {
 /* Navigation bar */
 
 nav {
-  margin-top: 15px;
-
   display: flex;
   justify-content: center;
   gap: 30px;
-
-  position: sticky;
-  top: 0;
 
   background-color: white;
   padding: 12px 0;
 
   border-bottom: 1px solid #eee;
-
-  z-index: 1000;
 }
 
 /* Navigation links */
