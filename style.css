@@ -6,7 +6,7 @@ body {
   line-height: 1.6;
 }
 
-/* Sticky wrapper for header + navbar */
+/* Sticky wrapper */
 
 .site-header {
   position: sticky;
@@ -21,31 +21,29 @@ header {
   text-align: center;
   padding: 25px 10px;
   border-bottom: 1px solid #ddd;
-  background-color: white;
+  background: white;
 }
-
-/* Name */
 
 header h1 {
   margin-bottom: 10px;
   font-size: 32px;
 }
 
-/* Navigation bar */
+/* Navigation */
 
 nav {
   border-bottom: 1px solid #eee;
 }
 
-/* Navigation container */
+/* THIS controls the spacing */
 
-nav .container {
+.nav-links {
   display: flex;
   justify-content: center;
-  gap: 30px;   /* spacing between menu items */
+  gap: 30px;
 }
 
-/* Navigation links */
+/* Links */
 
 .nav-link {
   text-decoration: none;
@@ -53,8 +51,6 @@ nav .container {
   font-weight: 500;
   font-size: 16px;
 }
-
-/* Hover effect */
 
 .nav-link:hover {
   color: #007acc;
