@@ -5,46 +5,41 @@ body {
   line-height: 1.6;
 }
 
-/* Sticky / Fixed Header */
+/* Fix the header and navbar at the top */
 .site-header {
-  position: fixed; /* Make it fixed at the top */
-  top: 0;          /* Start at the very top */
+  position: fixed;  /* stick it at top */
+  top: 0;
   left: 0;
-  width: 100%;     /* Full width */
+  width: 100%;
   background-color: white;
-  z-index: 1000;   /* Make sure it stays above content */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* subtle shadow */
+  z-index: 9999;    /* above everything */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Header styling */
-header {
+/* Ensure the inner header stays in place */
+.site-header header {
   text-align: center;
-  padding: 25px 10px;
+  padding: 20px 10px;
   border-bottom: 1px solid #ddd;
 }
 
-/* Name styling */
-header h1 {
-  margin-bottom: 10px;
-  font-size: 32px;
-}
-
-/* Navbar styling */
-.navbar {
+/* Navbar inside fixed header */
+.site-header .navbar {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
+  margin: 0;
 }
 
-/* Keep spacing between links */
+/* Nav links spacing */
 .nav-links {
   display: flex;
   justify-content: center;
-  gap: 20px; /* spacing between nav items */
+  gap: 20px; /* spacing between links */
 }
 
-/* Ensure main content starts below fixed header */
+/* Push main content below fixed header */
 .main-content {
-  padding-top: 180px; /* adjust based on header + navbar height */
+  padding-top: 160px; /* adjust based on header + navbar height */
 }
 
 /* Footer styling */
