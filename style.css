@@ -1,30 +1,53 @@
-/* Header styling */
+/* Reset browser defaults */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header */
 
 header {
   text-align: center;
   padding: 25px 10px;
   border-bottom: 1px solid #ddd;
-  font-family: Arial, sans-serif;
+  background-color: white;
 }
 
-/* Name styling */
+/* Name */
 
 header h1 {
   margin-bottom: 10px;
   font-size: 32px;
 }
 
-/* Navigation menu */
+/* Navigation bar */
 
 nav {
-  margin-top: 10px;
+  margin-top: 15px;
+
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+  position: sticky;
+  top: 0;
+
+  background-color: white;
+  padding: 12px 0;
+
+  border-bottom: 1px solid #eee;
+
+  z-index: 1000;
 }
+
+/* Navigation links */
 
 nav a {
   text-decoration: none;
   color: #333;
   font-weight: 500;
-  margin: 0 15px;
   font-size: 16px;
 }
 
@@ -32,4 +55,20 @@ nav a {
 
 nav a:hover {
   color: #007acc;
+}
+
+/* Main content */
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  color: #777;
 }
