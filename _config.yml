@@ -1,5 +1,32 @@
 title: Mehedi Hasan
-description: Personal website of Mehedi Hasan
-remote_theme: mmistakes/minimal-mistakes
+description: Personal website of Mehedi Hasan – Physics, Machine Learning, and AI Research
+author: Mehedi Hasan
+
+theme: minima
+
+# Website URL (change after adding your domain)
+url: "https://shuvo-hasan.github.io"
+baseurl: ""
+
+# Navigation menu
+header_pages:
+  - index.md
+  - research.md
+  - projects.md
+  - quotes.md
+  - cv.md
+  - contact.md
+
+# Social links
+github_username: Shuvo-Hasan
+linkedin_username: www.linkedin.com/in/mehedi-hasan-060867320
+
+# Build settings
+markdown: kramdown
+
+# Show excerpts on homepage
+show_excerpts: true
+
+# Plugins supported by GitHub Pages
 plugins:
-  - jekyll-remote-theme # Required to load remote themes
+  - jekyll-feed
