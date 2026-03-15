@@ -1,3 +1,8 @@
+---
+layout: page
+title:
+---
+
 title: Mehedi Hasan
 
 theme: minima
@@ -9,6 +14,7 @@ baseurl: ""
 # Navigation menu
 header_pages:
   - index.md
+  - about.md
   - research.md
   - projects.md
   - quotes.md
@@ -17,7 +23,7 @@ header_pages:
 
 # Social links
 github_username: Shuvo-Hasan
-linkedin_username: www.linkedin.com/in/mehedi-hasan-060867320
+linkedin_username: mehedi-hasan-060867320
 
 # Build settings
 markdown: kramdown
