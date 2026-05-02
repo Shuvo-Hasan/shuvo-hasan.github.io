@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Quotes
+title: Favourite Quotes
 ---
 
 "The reward of deeds depends upon the intentions, and every person will get the reward according to what he has intended." - Muhammad, Peace be upon him
@@ -14,6 +14,8 @@ title: Quotes
 "If you don’t produce, you won’t thrive – no matter how skilled or talented you are." – Cal Newport
 
 "The game is afoot." - Sherlock Holmes in Adventure of the Abbey Grange
+
+"Work is the best antidote to sorrow, my dear Watson." - Sherlock Holmes in The Adventure of the Empty House
 
 "When you have eliminated all which is impossible, then whatever remains, however improbable, must be the truth." - Sherlock Holmes in The Sign of Four
 
